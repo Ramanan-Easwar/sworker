@@ -1,0 +1,16 @@
+version: '3'
+services:
+  redis:
+    image: 'redis:latest'
+
+  server:
+    image: sworker_jar
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ${M2_HOME}:/root/.m2
