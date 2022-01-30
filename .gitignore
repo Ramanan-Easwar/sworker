@@ -33,8 +33,6 @@ local.properties
 xcuserdata
 *.xcuserstate
 
-# Konotor sample app proguard rules - Since they crash the github client
-Java/SkeletonApp/proguard/*
 
 # IntellijIdea
 *.iml
@@ -58,7 +56,6 @@ Session.vim
 .directory
 
 # compass
-Java/FeedbackService/src/main/webapp/.sass-cache/
 .sass-cache/
 
 # Redis Mac
